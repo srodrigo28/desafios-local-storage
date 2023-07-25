@@ -1,3 +1,5 @@
+alert('Hello Javascript')
+
 const form = document.getElementById('novoItem')
 const lista = document.getElementById('lista')
 const itens = []
@@ -15,15 +17,10 @@ form.addEventListener('submit', (evento) => {
 })
 
 function criaElemento(nome, quantidade){
-    const novoItem = document.createElement('li')
-    novoItem.classList.add('item')
 
-    const numeroItem = document.createElement('strong')
-    numeroItem.innerHTML = quantidade
-    novoItem.innerHTML += nome
+    lista.innerHTML = ` <p class='item' >  <strong>${quantidade} </strong> -  ${nome}</p>  `
 
-    lista.appendChild(novoItem)
-
+    /*** Salvar no navegador */
     const itemAtual = {
         'nome': nome,
         'quantidade': quantidade
