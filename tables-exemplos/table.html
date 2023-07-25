@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h2>Tabela de Investimento</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Cidade</th>
+                <th>Capital</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">01</td>
+                <td>Danillo William</td>
+                <td>Goiânia</td>
+                <td>R$ 2.000,00</td>
+            </tr>
+            <tr>
+                <td class="center">02</td>
+                <td>Maria</td>
+                <td>Aparecida</td>
+                <td>R$ 10.000,00</td>
+            </tr>
+            <tr>
+                <td class="center">03</td>
+                <td>Ana Flávia</td>
+                <td>Trindade</td>
+                <td>R$ 5.000,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td colspan="3" class="alinha-direita">R$ 17.000,00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+
+    <style>
+        .center{
+            text-align: center;
+        }
+        .alinha-direita{
+            text-align: end;
+        }
+        table, td, span {
+            border: 1px solid #333;
+        }
+        thead, tfoot {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</body>
+</html>

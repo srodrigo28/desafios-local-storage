@@ -2,11 +2,6 @@ const form = document.getElementById('novoItem')
 const lista = document.getElementById('lista')
 const itens = JSON.parse(localStorage.getItem("itens")) || []
 
-// Lista
-itens.forEach((elemento) => {
-    criaElemento(elemento)
-})
-
 form.addEventListener('submit', (evento) => {
     evento.preventDefault()
 
@@ -40,3 +35,8 @@ function criaElemento(item) {
 
     lista.appendChild(novoItem)
 }
+
+// Lista
+itens.forEach((elemento) => {
+    criaElemento(elemento)
+})

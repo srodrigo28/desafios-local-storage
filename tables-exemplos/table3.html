@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 3  </title>
+</head>
+<body>
+    <div class="container">
+        <h2>Tabela Pit Dog</h2>
+        <form>
+            <h4>Cliente:
+                <input type="text" placeholder="Nome" size="28">
+                <input type="text" placeholder="Telefone">
+            </h4>
+            <label for="produto"><strong>Seu pedido:</strong></label>
+            <input list="produto-list" id="produto" name="produto">
+            <datalist id="produto-list">
+                <option value="X-Tudo">
+                <option value="X-Simples">
+                <option value="Creme 1">
+                <option value="Creme 2">
+            </datalist>
+
+            <input type="number" placeholder="00" size="4" max="10" min="1">
+            <input type="text" placeholder="R$ 00" size="6" disabled>
+            <button>+</button>
+            <button type="reset">Limpar</button>
+        </form>
+
+        <fieldset style="width:420px; height: 70px; margin-bottom: 20px;">
+            <legend><strong>Seu pedido:</strong></legend>
+        </fieldset>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>X-Tudo</td>
+                    <td>Tudo com bacon, ovos xxx</td>
+                    <td>R$ 18,00</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>X-Simples</td>
+                    <td>Tudo com, ovos xxx</td>
+                    <td>R$ 12,00</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Creme 1</td>
+                    <td>Morango com Leite condensado</td>
+                    <td>R$ 12,00</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Creme 2</td>
+                    <td>Maracuja com Leite condensado</td>
+                    <td>R$ 12,00</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h2{
+            margin-top: -05px;
+        }
+        form{
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+        .center{
+            text-align: center;
+        }
+        .alinha-direita{
+            text-align: end;
+        }
+        table{
+            width: 450px;
+        }
+        table, td, span {
+            border: 1px solid #333;
+        }
+        thead, tfoot {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</body>
+</html>
