@@ -18,7 +18,7 @@ https://cursos.alura.com.br/course/javascript-web-armazenando-dados-navegador/ta
     * 07. Consultando dados no LocalStorage ( 07min )
     * 08. Atualizar página ao cadastrar item ( 06min )
 #### Capitulo 04 Atualizando um item
-    * 09. Modificar a quantidade de um item ( 13min )
+    * 09. Modificar a quantidade de um item ( 13min ) falha no procedimento 2:25min
     * 10. Atualizando um item do LocalStorage ( 05min )
 #### Capitulo 05 Interagindo com dados da Web
     * 11. Removendo um item da Mochila ( 06min )
